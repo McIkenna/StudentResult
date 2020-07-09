@@ -10,10 +10,10 @@ public class Course {
 		this.code = code;
 	}
 	public int getCreditHr() {
-		return CreditHr;
+		return creditHr;
 	}
 	public void setCreditHr(int creditHr) {
-		CreditHr = creditHr;
+		this.creditHr = creditHr;
 	}
 	public String getGrade() {
 		return grade;
@@ -33,8 +33,12 @@ public class Course {
 	public void setScore(double score) {
 		this.score = score;
 	}
-	public int CreditHr;
+	public int creditHr;
 	public String grade;
 	public String name;
 	public double score;
+	
+	public String toString() {
+	return "Name: " + this.name + " Code: " + this.code + ", Credit Hour: " + this.creditHr + ", Grade: " + this.grade + "  "; 
+	}
 }
